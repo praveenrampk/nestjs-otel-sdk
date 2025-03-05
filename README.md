@@ -135,6 +135,7 @@ Once the containers are running, access the SigNoz dashboard at:
 
 By default, retention period is set to 7 days for logs and traces, and 30 days for metrics. You can modify this in the **General tab** under **Settings** in the SigNoz UI.
 
+![alt text](assets/image.png)
 ---
 
 ## API Reference

@@ -52,9 +52,12 @@
   "license": "MIT",
   "keywords": [
     "nestjs",
+    "otel",
     "opentelemetry",
     "logging",
     "tracing",
-    "monitoring"
+    "monitoring",
+    "observability",
+    "prometheus"
   ]
 }
