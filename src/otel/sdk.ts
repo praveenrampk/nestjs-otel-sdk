@@ -2,10 +2,10 @@ import { NodeSDK } from "@opentelemetry/sdk-node";
 import { BatchLogRecordProcessor } from "@opentelemetry/sdk-logs";
 import { getNodeAutoInstrumentations } from "@opentelemetry/auto-instrumentations-node";
 
-import resource from "@src/otel/resource";
-import logExporter from "@src/logs/log-exporter";
-import traceExporter from "@src/traces/trace-exporter";
-import loggerProvider from "@src/logs/logger-provider";
+import resource from "../otel/resource";
+import logExporter from "../logs/log-exporter";
+import traceExporter from "../traces/trace-exporter";
+import loggerProvider from "../logs/logger-provider";
 
 export function bootstrapOTEL() {
   const instrumentations = [getNodeAutoInstrumentations()];

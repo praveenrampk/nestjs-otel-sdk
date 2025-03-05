@@ -4,7 +4,7 @@ import {
   ATTR_SERVICE_VERSION,
 } from "@opentelemetry/semantic-conventions";
 
-import { OTEL } from "@src/constants";
+import { OTEL } from "../constants";
 
 const resource = Resource.default().merge(
   new Resource({
