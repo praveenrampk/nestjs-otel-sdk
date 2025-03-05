@@ -1,8 +1,8 @@
 import { ConsoleLogger } from "@nestjs/common";
 import { SeverityNumber } from "@opentelemetry/api-logs";
 
-import { LogLevel, OTEL } from "@src/constants";
-import loggerProvider from "@src/logs/logger-provider";
+import { LogLevel, OTEL } from "../constants";
+import loggerProvider from "../logs/logger-provider";
 
 export class OtelLoggerService extends ConsoleLogger {
   private logMessage(
