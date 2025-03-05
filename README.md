@@ -35,14 +35,14 @@ yarn add nestjs-otel-sdk
 In your main application entry point, initialize OpenTelemetry:
 
 ```typescript
-import { bootstrapOpenTelemetry, OtelLoggerService } from 'nestjs-otel-sdk'; // Ensure this import is at the top
+import { bootstrapOTEL, OtelLoggerService } from 'nestjs-otel-sdk'; // Ensure this import is at the top
 import { NestFactory } from '@nestjs/core';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   // Initialize OpenTelemetry before anything else
-  bootstrapOpenTelemetry();
+  bootstrapOTEL();
 
   // Create the NestJS application instance with CORS enabled
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {
@@ -139,7 +139,7 @@ By default, retention period is set to 7 days for logs and traces, and 30 days f
 
 ## API Reference
 
-### `bootstrapOpenTelemetry()`
+### `bootstrapOTEL()`
 Bootstraps OpenTelemetry with log and trace exporters.
 
 ### `OtelLoggerService`

@@ -7,7 +7,7 @@ import logExporter from "@src/logs/log-exporter";
 import traceExporter from "@src/traces/trace-exporter";
 import loggerProvider from "@src/logs/logger-provider";
 
-export function bootstrapOpenTelemetry() {
+export function bootstrapOTEL() {
   const instrumentations = [getNodeAutoInstrumentations()];
 
   const logRecordProcessor = new BatchLogRecordProcessor(logExporter);
